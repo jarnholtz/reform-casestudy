@@ -1,0 +1,58 @@
+:root {
+    --font-sans-serif: 'Host Grotesk', sans-serif;
+    --font-serif: 'Instrument Serif', serif;
+    --font-display: 'Raster', display;
+    --black: #000000;
+    --white: #f8f8ed;
+    --gray: #c8c4ad;
+    --dark-gray: #27292f;
+}
+
+html {
+    box-sizing: border-box;
+    background-color: var(--white);
+}
+
+*, 
+* :before, 
+* :after {
+    box-sizing: inherit;
+}
+
+/*Typography*/
+body {
+    font-family: var(--font-sans-serif);
+    font-weight: 300;
+    color: var(--black);
+    line-height: 1.5;
+}
+
+h1, 
+h2, 
+h3 {
+    font-family: var(--font-serif);
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/*Components*/
+.component img {
+    max-width: initial;
+}
+
+.component__img {
+    border: 1px solid var(--black);
+    overflow-x: auto;
+}
