@@ -8,36 +8,89 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Handjet:ELSH@2&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap" rel="stylesheet">
         <link href="https://db.onlinewebfonts.com/c/e08adb69e408cb6c1c9e8e50b32e0681?family=Raster" rel="stylesheet" type="text/css"/>
 
     <!-- CSS -->
         <link rel="stylesheet" href="../css/normalize.css">
         <link rel="stylesheet" href="../css/main.css">
+    
+    <!-- Phosphor Icons -->
+        <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+
 </head>
 <body>
     <h1>Components</h1>
 
-    <h2>Typography defaults</h2>
+    <h2>Typography</h2>
 
+    <h3>Headings (h1, h2 ...)</h3>
     <article class="component">
-        <h3 class="component__name">Body</h3>
-        <div class="component__img">
+        <div class="component__content">
+            <p class="component__content-caption">code</p>
+            <div class="component__content-code">
+                <h1>Heading 1</h1>
+                <h2>Heading 2</h2>
+                <h3>Heading 3</h3>
+            </div>
+        </div>
+    </article>
+
+    <h3>Body</h3>
+    <article class="component">
+        <div class="component__content">
+            <p class="component__content-caption">image</p>
             <img srcset="img/section-info_body.png 2x" src="img/section-info_body.png" alt="Body typography defaults">
         </div>
-        <div class="component__code">
-            <p>Not just a pitch, not just a product...there’s a reason you do what you do. It’s the late nights, the wild ideas, the belief that this thing you’re building actually matters. That’s the story people will connect with. That’s the story worth telling. It’s the story we can craft for you.</p>
+        <div class="component__content">
+            <p class="component__content-caption">code</p>
+            <p class="component__content-code">Not just a pitch, not just a product...there’s a reason you do what you do. It’s the late nights, the wild ideas, the belief that this thing you’re building actually matters. That’s the story people will connect with. That’s the story worth telling. It’s the story we can craft for you.</p>
+        </div>
+    </article>
+    
+
+    <h2>Card</h2>
+    <article class="component">
+        <div class="component__content">
+            <p class="component__content-caption">image</p>
+            <img src="img/casecard.png" alt="card component">
+        </div>
+        <div class="component__content">
+            <p class="component__content-caption">code</p>
+            <div class="component__content-code">
+                <div class="card">
+                    <img src="https://cdn.sanity.io/images/92bwk9y2/production/a32a4b8d5c55f8b181cb08cf5a933f0ddfda6c69-12256x10764.png?auto=format&fit=max&q=90&w=4596" alt="strider logo">
+
+                    <div class="card__content">
+                        <p class="card__title">Strider</p>
+                        <div class="card__content__chips">
+                            <p class="card__chip">Art Direction</p>
+                            <p class="card__chip">Branding</p>
+                            <p class="card__chip">Web Design</p>
+                            <p class="card__chip">Web Development</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </article>
 
+    <h2>Button</h2>
     <article class="component">
-        <h3 class="component__name">Headings (h1, h2 ...)</h3>
-        <div class="component__img">
-            <img srcset="img/section-info_heading.png 2x" src="img/section-info_heading.png" alt="headings typography defaults">
+        <div class="component__content">
+            <p class="component__content-caption">image</p>
+            <img src="img/section-info_button.png" alt="Button component">
         </div>
-        <div class="component__code">
-            <h2>Your business has a story</h2>
-            <h3>Create your vision. Extend your runway.</h3>
+        <div class="component__content">
+            <p class="component__content-caption">code</p>
+            <div class="component__content-code">
+                <button class="button">
+                    <p class="button__text">Learn more about us</p>
+                    <i class="ph ph-arrow-up-right"></i>
+                </button>
+            </div>
         </div>
     </article>
+
 </body>
 </html>
