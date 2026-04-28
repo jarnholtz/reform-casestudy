@@ -51,10 +51,6 @@ h3 {
     font-size: 24px;
 }
 
-p {
-    margin: 0;
-}
-
 img {
     display: block;
     max-width: 100%;
@@ -74,14 +70,13 @@ img {
     max-width: 100%;
     overflow-x: auto;
     padding-bottom: 16px;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
 }
 
 .component__content img {
     width: 80%;
-    margin: 0 auto;
+    overflow-x: auto;
+    justify-self: center;
+    align-items: center;
 }
 
 .component__content-caption {
@@ -239,6 +234,10 @@ button i {
   border: none;
   border-bottom: 1px solid var(--white);
   padding-bottom: 4px;
+}
+
+.button--menu p {
+  margin: 0;
 }
 
 /* Footer Nav */
