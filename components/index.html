@@ -23,207 +23,136 @@
 <body>
     <h1>Components</h1>
 
-    <h2>Typography</h2>
+    <div class="section-component">
+        <h2>Typography</h2>
 
-    <h3>Headings (h1, h2 ...)</h3>
-    <article class="component">
-        <div class="component__content">
-            <p class="component__content-caption">code</p>
-            <div class="component__content-code">
-                <h1>Heading 1</h1>
-                <h2>Heading 2</h2>
-                <h3>Heading 3</h3>
+        <h3>Headings (h1, h2 ...)</h3>
+        <article class="component">
+            <div class="component__content">
+                <p class="component__content-caption">code</p>
+                <div class="component__content-code">
+                    <h1>Heading 1</h1>
+                    <h2>Heading 2</h2>
+                    <h3>Heading 3</h3>
+                </div>
             </div>
-        </div>
-    </article>
+        </article>
+        <h3>Body</h3>
+        <article class="component">
+            <div class="component__content">
+                <p class="component__content-caption">image</p>
+                <img srcset="img/section-info_body.png 2x" src="img/section-info_body.png" alt="Body typography defaults">
+            </div>
+            <div class="component__content">
+                <p class="component__content-caption">code</p>
+                <p class="component__content-code">Not just a pitch, not just a product...there’s a reason you do what you do. It’s the late nights, the wild ideas, the belief that this thing you’re building actually matters. That’s the story people will connect with. That’s the story worth telling. It’s the story we can craft for you.</p>
+            </div>
+        </article>
+    </div>
 
-    <h3>Body</h3>
-    <article class="component">
-        <div class="component__content">
-            <p class="component__content-caption">image</p>
-            <img srcset="img/section-info_body.png 2x" src="img/section-info_body.png" alt="Body typography defaults">
-        </div>
-        <div class="component__content">
-            <p class="component__content-caption">code</p>
-            <p class="component__content-code">Not just a pitch, not just a product...there’s a reason you do what you do. It’s the late nights, the wild ideas, the belief that this thing you’re building actually matters. That’s the story people will connect with. That’s the story worth telling. It’s the story we can craft for you.</p>
-        </div>
-    </article>
-    
+    <div class="section-component">
+        <h2>Card</h2>
+        <article class="component">
+            <div class="component__content">
+                <p class="component__content-caption">image</p>
+                <img src="img/casecard.png" alt="card component">
+            </div>
+            <div class="component__content">
+                <p class="component__content-caption">code</p>
+                <div class="component__content-code">
+                    <div class="card">
+                        <img src="https://cdn.sanity.io/images/92bwk9y2/production/a32a4b8d5c55f8b181cb08cf5a933f0ddfda6c69-12256x10764.png?auto=format&fit=max&q=90&w=4596" alt="strider logo">
 
-    <h2>Card</h2>
-    <article class="component">
-        <div class="component__content">
-            <p class="component__content-caption">image</p>
-            <img src="img/casecard.png" alt="card component">
-        </div>
-        <div class="component__content">
-            <p class="component__content-caption">code</p>
-            <div class="component__content-code">
-                <div class="card">
-                    <img src="https://cdn.sanity.io/images/92bwk9y2/production/a32a4b8d5c55f8b181cb08cf5a933f0ddfda6c69-12256x10764.png?auto=format&fit=max&q=90&w=4596" alt="strider logo">
-
-                    <div class="card__content">
-                        <p class="card__title">Strider</p>
-                        <div class="card__content__chips">
-                            <p class="card__chip">Art Direction</p>
-                            <p class="card__chip">Branding</p>
-                            <p class="card__chip">Web Design</p>
-                            <p class="card__chip">Web Development</p>
+                        <div class="card__content">
+                            <p class="card__title">Strider</p>
+                            <div class="card__content__chips">
+                                <p class="card__chip">Art Direction</p>
+                                <p class="card__chip">Branding</p>
+                                <p class="card__chip">Web Design</p>
+                                <p class="card__chip">Web Development</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </article>
+        </article>
+    </div>
 
-    <h2>Button</h2>
-    <article class="component">
-        <div class="component__content">
-            <p class="component__content-caption">image</p>
-            <img src="img/section-info_button.png" alt="Button component">
-        </div>
-        <div class="component__content">
-            <p class="component__content-caption">code</p>
-            <div class="component__content-code">
-                <button class="button">
-                    <p class="button__text">Learn more about us</p>
-                    <i class="ph ph-arrow-up-right"></i>
-                </button>
+    <div class="section-component">
+        <h2>Button</h2>
+        <article class="component">
+            <div class="component__content">
+                <p class="component__content-caption">image</p>
+                <img src="img/section-info_button.png" alt="Button component">
             </div>
-        </div>
-    </article>
+            <div class="component__content">
+                <p class="component__content-caption">code</p>
+                <div class="component__content-code">
+                    <button class="button">
+                        <p class="button__text">Learn more about us</p>
+                        <i class="ph ph-arrow-up-right"></i>
+                    </button>
+                </div>
+            </div>
+        </article>
+    </div>
 
-    <h2>Nav Bar</h2>
-    <article class="component component--stacked">
-        <div class="component__content">
-            <p class="component__content-caption">image</p>
-            <img src="img/navbar.png" alt="Nav Bar component">
-        </div>
-        <div class="component__content">
-            <p class="component__content-caption">code</p>
-            <div class="component__content-code">
-                <nav class="nav">
-                    <img src="img/Subtract.svg" alt="nav logo">
-                    <div class="nav__title-group">
-                        <h2 class="nav__title">Award winning</h2>
-                        <p class="nav__subtitle">(design)</p>
-                        <h2 class="nav__title">agency</h2>
-                    </div>
+    <div class="section-component">
+        <h2>Nav Bar</h2>
+        <article class="component component--stacked">
+            <div class="component__content">
+                <p class="component__content-caption">image</p>
+                <img src="img/navbar.png" alt="Nav Bar component">
+            </div>
+            <div class="component__content">
+                <p class="component__content-caption">code</p>
+                <div class="component__content-code">
+                    <nav class="nav">
+                        <img src="img/Subtract.svg" alt="nav logo">
+                        <div class="nav__title-group">
+                            <h2 class="nav__title">Award winning</h2>
+                            <p class="nav__subtitle">(design)</p>
+                            <h2 class="nav__title">agency</h2>
+                        </div>
+                        <button class="button--menu">
+                            <i class="ph ph-list"></i>
+                            <p class="button__text">Menu</p>
+                        </button>
+                    </nav>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <div class="section-component">
+        <h2>Menu</h2>
+        <article class="component">
+            <div class="component__content">
+                <p class="component__content-caption">image</p>
+                <img src="img/navbar_menu.png" alt="Button component">
+            </div>
+            <div class="component__content">
+                <p class="component__content-caption">code</p>
+                <div class="component__content-code">
                     <button class="button--menu">
                         <i class="ph ph-list"></i>
                         <p class="button__text">Menu</p>
                     </button>
-                </nav>
-            </div>
-        </div>
-    </article>
-
-    <h2>Menu</h2>
-    <article class="component">
-        <div class="component__content">
-            <p class="component__content-caption">image</p>
-            <img src="img/navbar_menu.png" alt="Button component">
-        </div>
-        <div class="component__content">
-            <p class="component__content-caption">code</p>
-            <div class="component__content-code">
-                <button class="button--menu">
-                    <i class="ph ph-list"></i>
-                    <p class="button__text">Menu</p>
-                </button>
-            </div>
-        </div>
-    </article>
-
-    <h2>Footer: Nav</h2>
-    <article class="component">
-        <div class="component__content">
-            <p class="component__content-caption">image</p>
-            <img src="img/Footer_nav.png" alt="Footer Nav component">
-        </div>
-        <div class="component__content">
-            <p class="component__content-caption">code</p>
-            <div class="component__content-code">
-                <nav class="footer__nav">
-                    <img src="img/navbar_logo.svg" alt="nav logo">
-                    <div class="footer__nav-links">
-                        <a href="#">Our Work</a>
-                        <a href="#">About Us</a>
-                        <a href="#">Reform Nova</a>
-                        <a href="#">Contact Us</a>
-                        <a href="#">Careers</a>
-                    </div>
-                </nav>
-            </div>
-        </div>
-    </article>
-
-    <h2>Footer: Socials</h2>
-    <article class="component">
-        <div class="component__content">
-            <p class="component__content-caption">image</p>
-            <img src="img/Footer_socials.png" alt="Footer Socials component">
-        </div>
-        <div class="component__content">
-            <p class="component__content-caption">code</p>
-            <div class="component__content-code">
-                <div class="footer__socials">
-                    <a href="#">linkedin</a>
-                    <a href="#">instagram</a>
-                    <a href="#">awwwards</a>
-                    <a href="#">x</a>
-                    <a href="#">dribbble</a>
                 </div>
             </div>
-        </div>
-    </article>
+        </article>
+    </div>
 
-    <h2>Footer: CTA</h2>
-    <article class="component">
-        <div class="component__content">
-            <p class="component__content-caption">image</p>
-            <img src="img/Footer_CTA.png" alt="Footer CTA component">
-        </div>
-        <div class="component__content">
-            <p class="component__content-caption">code</p>
-            <div class="component__content-code">
-                <div class="footer__CTA">
-                    <p>Ready to build something with us?</p>
-                    <div class="footer__CTA-button">
-                        <h1>Let's Chat</h1>
-                    <i class="ph ph-arrow-up-right"></i>
-                    </div>
-                </div>
+    <div class="section-component">
+        <h2>Footer: Nav</h2>
+        <article class="component">
+            <div class="component__content">
+                <p class="component__content-caption">image</p>
+                <img src="img/Footer_nav.png" alt="Footer Nav component">
             </div>
-        </div>
-    </article>
-
-    <h2>Footer: logo</h2>
-    <article class="component">
-        <div class="component__content">
-            <p class="component__content-caption">image</p>
-            <img src="img/Footer_logo.png" alt="Footer Logo component">
-        </div>
-        <div class="component__content">
-            <p class="component__content-caption">code</p>
-            <div class="component__content-code">
-                <div class="footer__logo">
-                    <img src="img/FooterLogo.98e00533.svg" alt="footer logo">
-                </div>
-            </div>
-        </div>
-    </article>
-
-    <h2>Footer</h2>
-    <article class="component component--stacked">
-        <div class="component__content">
-            <p class="component__content-caption">image</p>
-            <img src="img/footer.png" alt="Footer Logo component">
-        </div>
-        <div class="component__content">
-            <p class="component__content-caption">code</p>
-            <div class="component__content-code footer">
-                <div class="footer__top">
+            <div class="component__content">
+                <p class="component__content-caption">code</p>
+                <div class="component__content-code">
                     <nav class="footer__nav">
                         <img src="img/navbar_logo.svg" alt="nav logo">
                         <div class="footer__nav-links">
@@ -234,13 +163,21 @@
                             <a href="#">Careers</a>
                         </div>
                     </nav>
-                    <div class="footer__CTA">
-                        <p>Ready to build something with us?</p>
-                        <div class="footer__CTA-button">
-                            <h1>Let's Chat</h1>
-                        <i class="ph ph-arrow-up-right"></i>
-                        </div>
-                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <div class="section-component">
+        <h2>Footer: Socials</h2>
+        <article class="component">
+            <div class="component__content">
+                <p class="component__content-caption">image</p>
+                <img src="img/Footer_socials.png" alt="Footer Socials component">
+            </div>
+            <div class="component__content">
+                <p class="component__content-caption">code</p>
+                <div class="component__content-code">
                     <div class="footer__socials">
                         <a href="#">linkedin</a>
                         <a href="#">instagram</a>
@@ -249,12 +186,93 @@
                         <a href="#">dribbble</a>
                     </div>
                 </div>
-                <div class="footer__logo">
-                    <img src="img/FooterLogo.98e00533.svg" alt="footer logo">
+            </div>
+        </article>
+    </div>
+
+    <div class="section-component">
+        <h2>Footer: CTA</h2>
+        <article class="component component--stacked">
+            <div class="component__content">
+                <p class="component__content-caption">image</p>
+                <img src="img/Footer_CTA.png" alt="Footer CTA component">
+            </div>
+            <div class="component__content">
+                <p class="component__content-caption">code</p>
+                <div class="component__content-code">
+                    <div class="footer__CTA">
+                        <p>Ready to build something with us?</p>
+                        <div class="footer__CTA-button">
+                            <h1>Let's Chat</h1>
+                        <i class="ph ph-arrow-up-right"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </article>
+        </article>
+    </div>
+
+    <div class="section-component">
+        <h2>Footer: logo</h2>
+        <article class="component">
+            <div class="component__content">
+                <p class="component__content-caption">image</p>
+                <img src="img/Footer_logo.png" alt="Footer Logo component">
+            </div>
+            <div class="component__content">
+                <p class="component__content-caption">code</p>
+                <div class="component__content-code">
+                    <div class="footer__logo">
+                        <img src="img/FooterLogo.98e00533.svg" alt="footer logo">
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <div class="section-component">
+        <h2>Footer</h2>
+        <article class="component component--stacked">
+            <div class="component__content">
+                <p class="component__content-caption">image</p>
+                <img src="img/footer.png" alt="Footer Logo component">
+            </div>
+            <div class="component__content">
+                <p class="component__content-caption">code</p>
+                <div class="component__content-code footer">
+                    <div class="footer__top">
+                        <nav class="footer__nav">
+                            <img src="img/navbar_logo.svg" alt="nav logo">
+                            <div class="footer__nav-links">
+                                <a href="#">Our Work</a>
+                                <a href="#">About Us</a>
+                                <a href="#">Reform Nova</a>
+                                <a href="#">Contact Us</a>
+                                <a href="#">Careers</a>
+                            </div>
+                        </nav>
+                        <div class="footer__CTA">
+                            <p>Ready to build something with us?</p>
+                            <div class="footer__CTA-button">
+                                <h1>Let's Chat</h1>
+                            <i class="ph ph-arrow-up-right"></i>
+                            </div>
+                        </div>
+                        <div class="footer__socials">
+                            <a href="#">linkedin</a>
+                            <a href="#">instagram</a>
+                            <a href="#">awwwards</a>
+                            <a href="#">x</a>
+                            <a href="#">dribbble</a>
+                        </div>
+                    </div>
+                    <div class="footer__logo">
+                        <img src="img/FooterLogo.98e00533.svg" alt="footer logo">
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
 </body>
 </html>
 
