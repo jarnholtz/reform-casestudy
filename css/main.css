@@ -327,7 +327,7 @@ button i {
 
 .footer__nav a {
   font-family: var(--font-sans-serif);
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 4400;
   text-transform: uppercase;
   color: var(--black);
@@ -349,7 +349,7 @@ button i {
 
 .footer__socials a {
   font-family: var(--font-display);
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 500;
   text-transform: uppercase;
   color: var(--black);
@@ -381,6 +381,11 @@ button i {
   gap: 8px;
   border: none;
   font-size: 28px;
+  transition: transform 0.4s ease;
+}
+
+.footer__CTA-button:hover {
+  transform: scale(1.05);
 }
 
 /* Footer Logo */
@@ -399,7 +404,7 @@ button i {
   
 }
 
-/* Components */
+/* Components
 .component {
     display: flex;
     gap: 16px;
