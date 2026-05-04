@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +17,6 @@
     <!-- Phosphor Icons -->
         <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
         <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css">
-
 </head>
 <body>
     <!-- Navbar -->
@@ -59,10 +57,13 @@
 
     <!-- Case Studies -->
      <section class="case-studies">
-        <div class="case-studies__title">
-            <h1 class="case-studies__title--regular">Our</h1>
-            <h1 class="case-studies__title--italic">featured</h1>
-            <h1 class="case-studies__title--regular">Work</h1>
+        <div class="case-studies__header">
+            <div class="case-studies__title">
+                <h1 class="case-studies__title--regular">Our</h1>
+                <h1 class="case-studies__title--italic">featured</h1>
+                <h1 class="case-studies__title--regular">Work</h1>
+            </div>
+            <span>Building Brands For Ambitious Start Ups</span>
         </div>
         <div class="case-studies__content">
             <div class="card">
@@ -152,10 +153,156 @@
         <div class="case-studies__cta">
             <h1>We do many</h1>
             <button class="button">
-                <p class="button__text">Learn more about us</p>
-                <i class="ph ph-arrow-up-right"></i>
+                <div class="content vertical">
+                    <div class="button__text">Learn more about us <i class="ph ph-arrow-up-right"></i></div>
+                    <div class="button__hover-text">Learn more about us <i class="ph ph-arrow-up-right"></i></div>
+                </div>
             </button>
             <h1>things very well.</h1>
+        </div>
+    </section>
+
+    <!-- Awards -->
+    <section class="awards">
+        <div class="awards__heading">
+            <h1 class="awards__heading--title">Awards</h1>
+            <h2 class="awards__heading--subtitle">&amp Recognitions</h2>
+        </div>
+
+        <div class="awards__content">
+            <img src="img/reform_logo.svg" alt="runway logo">
+            <span class="awards__label">Reform Collective Webby Winner '23</span>
+            <a href="#" class="button__arrow">
+                <span>Webby award winner</span>
+                <i class="ph ph-arrow-up-right"></i>
+            </a>
+            <span class="awards__description">Websites and mobile sites financial services/banking 2024</span>
+        </div>
+
+        <div class="awards__overview">
+            <dl class="awards__item">
+                <dt class="awards__label">Awwwards</dt>
+                <dd class="awards__item-count">(8)</dd>
+            </dl>
+            <dl class="awards__item">
+                <dt class="awards__label">Apple</dt>
+                <dd class="awards__item-count">(2)</dd>
+            </dl>
+            <dl class="awards__item">
+                <dt class="awards__label">CSSDA</dt>
+                <dd class="awards__item-count">(12)</dd>
+            </dl>
+            <dl class="awards__item">
+                <dt class="awards__label">FWA</dt>
+                <dd class="awards__item-count">(2)</dd>
+            </dl>
+            <dl class="awards__item">
+                <dt class="awards__label">Webby</dt>
+                <dd class="awards__item-count">(1)</dd>
+            </dl>
+        </div>
+    </section>
+
+    <!-- Selected Clients -->
+    <section class="selected-clients">
+        <span>Selected Clients</span>
+        <div class="clients">
+            <img src="img/webflow.svg" alt="logo">
+            <img src="img/cdprojekt.svg" alt="logo">
+            <img src="img/tiktok.svg" alt="logo">
+            <img src="img/loom.svg" alt="logo">
+            <img src="img/pipe.svg" alt="logo">
+            <img src="img/runway.svg" alt="logo">
+            <img src="img/lemond.svg" alt="logo">
+            <img src="img/aerodome.svg" alt="logo">
+            <img src="img/preventures.svg" alt="logo">
+            <img src="img/hume.svg" alt="logo">
+            <img src="img/ericrise.svg" alt="logo">
+            <img src="img/sandbox.svg" alt="logo">
+            <img src="img/block.svg" alt="logo">
+            <img src="img/elementery.svg" alt="logo">
+            <img src="img/lvt.svg" alt="logo">
+            <img src="img/galileo.svg" alt="logo">
+        </div>
+    </section>
+
+    <!-- Details -->
+    <section class="details">
+        <div class="details__title">
+            <h2 class="details__title--regular">The</h2>
+            <h1 class="details__title--serif">Details</h>
+            <h2 class="details__title--regular">Club</h2>
+        </div>
+        <div class="details__subtitle">
+            <span>Pinkies up</span>
+            <span>Est. 2016</span>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about">
+        <div class="about__text">
+            <div class="about__text-item">
+                <div class="about__text-item--arrow">
+                    <h1>Your business has a story.</h1>
+                    <img src="img/arrow.e64d2547.svg">
+                </div>
+                <p>Not just a pitch, not just a product...there’s a reason you do what you do. It’s the late nights, the wild ideas, the belief that this thing you’re building actually matters. That’s the story people will connect with. That’s the story worth telling. It’s the story we can craft for you.</p>
+            </div>
+            <div class="about__text-item">
+                <h1>We design and build to tell it.</h1>
+                <p>A great story deserves more than a place to live. A story needs a way to move. We design brands, craft interfaces, and build digital experiences that don’t just inform but pull people in. Every detail, every interaction, every pixel works to make your story impossible to ignore.</p>
+            </div>
+        </div>
+        <button class="button">
+            <div class="content vertical">
+                <div class="button__text">Let's build your brand<i class="ph ph-arrow-up-right"></i></div>
+                <div class="button__hover-text">Let's build your brand<i class="ph ph-arrow-up-right"></i></div>
+            </div>
+        </button>
+    </section>
+
+    <!-- Learn More -->
+    <section class="learn-more">
+        <video autoplay muted playsinline>
+            <source src="img/blob.mov" type="video/mp4">
+             Your browser does not support the video tag.
+        </video>
+
+        <div class="learn-more__scroll">
+            <div class="learn-more__scroll--track">
+                <span>Equity over cash •&nbsp;</span>
+                <span>Equity over cash •&nbsp;</span>
+                <span>Equity over cash •&nbsp;</span>
+                <span>Equity over cash •&nbsp;</span>
+                <span>Equity over cash •&nbsp;</span>
+                <span>Equity over cash •&nbsp;</span>
+                <span>Equity over cash •&nbsp;</span>
+                <span>Equity over cash •&nbsp;</span>
+                <span>Equity over cash •&nbsp;</span>
+                <span>Equity over cash •&nbsp;</span>
+                <span>Equity over cash •&nbsp;</span>
+                <span>Equity over cash •&nbsp;</span>
+                <span>Equity over cash •&nbsp;</span>
+                <span>Equity over cash •&nbsp;</span>
+                <span>Equity over cash •&nbsp;</span>
+                <span>Equity over cash •&nbsp;</span>
+                <span>Equity over cash •&nbsp;</span>
+                <span>Equity over cash •&nbsp;</span>
+            </div>
+        </div>
+        <div class="learn-more__content">
+            <div class="learn-more__text">
+                <h1>Create your vision. Extend your runway.</h1>
+                <p>Reform Nova isn’t just another service. Nova is a partnership. We trade world-class design, development, and brand strategy for equity, helping startups move faster, stand out, and scale smarter. No upfront agency fees. just the creative firepower you need to launch, backed by a team that’s as invested in your success as you are.</p>
+                <a href="#" class="button__arrow--white">
+                    <span>Learn more</span>
+                    <i class="ph ph-arrow-up-right"></i>
+                </a>
+            </div>
+            <div class="learn-more__logo">
+                <img src="img/NovaLogo.acbad7bc.svg">
+            </div>
         </div>
     </section>
 
@@ -175,7 +322,7 @@
             <p>Ready to build something with us?</p>
             <div class="footer__CTA-button">
                 <h1>Let's Chat</h1>
-            <i class="ph ph-arrow-up-right"></i>
+                <i class="ph ph-arrow-up-right"></i>
             </div>
         </div>
         <div class="footer__socials">

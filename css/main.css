@@ -33,7 +33,7 @@ h1,
 h2, 
 h3 {
     font-family: var(--font-serif);
-    line-height: 0.3em;
+    line-height: 0em;
     font-weight: 200;
     letter-spacing: -1px;
 }
@@ -291,27 +291,87 @@ img {
 
 /* Button */
 .button {
-  display: flex;
-  align-items: center;
   gap: 8px;
   background-color: var(--black);
   color: var(--white);
   border: none;
   border-radius: 100px;
   padding: 32px 54px;
-  
 }
 
-.button__text {
+.content {
+  position: relative;
+  overflow: hidden;
   font-weight: 600;
   text-transform: uppercase;
 }
 
-button i {
+.content i {
   font-size: 24px;
 }
 
+.button__text,
+.button__hover-text {
+  transition: transform 2s cubic-bezier(0.16, 1, 0.3, 1);
+  align-items: center;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
 
+.vertical .button__text,
+.vertical .button__hover-text {
+  transform: translateY(0%);
+}
+
+.button__hover-text {
+  position: absolute;
+}
+
+.vertical .button__hover-text {
+  bottom: -100%;
+}
+
+button:hover .vertical .button__hover-text,
+button:hover .vertical .button__text {
+  transform: translateY(-100%);
+}
+
+/* Awards */
+.awards {
+  padding: 48px 32px;
+  background-image: url(../img/Background.png);
+}
+
+.awards__heading--title {
+  font-family: var(--font-serif);
+  font-size: 112px;
+}
+
+.awards__heading--subtitle {
+  font-family: var(--font-sans-serifserif);
+  font-size: 46px;
+  font-weight: 400;
+}
+
+.awards_content img {
+  width: auto;
+  height: 30;
+}
+
+/* Button Arrow */
+.button__arrow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--black);
+  font-weight: 500;
+  font-size: 18px;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--black);
+  text-decoration: none;
+  width: fit-content;
+}
 
 /* Footer Nav */
 .footer__nav img {
@@ -402,46 +462,4 @@ button i {
   justify-content: space-between;
   padding: 48px 32px 16px 32px;
   
-}
-
-/* Components
-.component {
-    display: flex;
-    gap: 16px;
-    width: 100%;
-}
-
-.component__content {
-    border: 1px solid var(--black);
-    font-family: var(--font-sans-serif);
-    min-width: 50%;
-    max-width: 100%;
-    overflow-x: auto;
-    padding-bottom: 16px;
-}
-
-.component__content img {
-    width: 80%;
-    overflow-x: auto;
-    justify-self: center;
-    align-items: center;
-}
-
-.component__content-caption {
-    font-family: var(--font-display);
-    font-size: 12px;
-    text-transform: uppercase;
-    margin-top: 8px;
-    border: 1px solid var(--black);
-    padding: 4px 8px;
-    color: var(--white);
-    background-color: var(--black);
-    max-width: fit-content;
-}
-
-.component__content-code {
-    align-items: center;
-    justify-content: center;
-    padding: 0 16px;
-    width: 100%;
 }
